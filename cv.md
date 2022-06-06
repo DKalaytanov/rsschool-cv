@@ -1,7 +1,7 @@
 ![DKalaytanov](1.png "DKalaytanov")
 
 # Kalaytanov Dmitriy Nikolaevich
-###Junior Frontend Developer
+### Junior Frontend Developer
 
 ________________________________
 __email: kalaytanov@yandex.ru__
@@ -9,7 +9,7 @@ __email: kalaytanov@yandex.ru__
 __rs-scool: DKalaytanov__
 ________________________________
 
-###About me
+### About me
 
 
     I studied to be a lawyer, I didn't like it. I have been working with computers all 
