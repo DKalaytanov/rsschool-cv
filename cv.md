@@ -9,7 +9,23 @@ ________________________________
 ___1. About me___
 
 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur eius in labore quidem, sequi suscipit! 
+    I studied to be a lawyer, I didn't like it. I have been working with computers all my life (repair, modernization, installation of programs). My dream has always been to learn programming, but I thought it wasn't mine. Now I have set myself a goal to fix this and learn web programming. I am gradually moving towards this goal.
 
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut commodi debitis ipsam nobis perspiciatis sequi, sint unde vitae.
+___2. Programming skills___
+
+
+    CSS and HTML. 
+
+___3. Сode examples___
+
+
+    *https://github.com/DKalaytanov/rsschool-cv/tree/gh-pages/cv.md
+    *
+
+
+    
+
+
+
+
 
