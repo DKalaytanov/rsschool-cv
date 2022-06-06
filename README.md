@@ -1,2 +1,1 @@
-test
->test from gh-pages
+https://dkalaytanov.github.io/rsschool-cv/cv
