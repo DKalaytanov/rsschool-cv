@@ -4,29 +4,26 @@
 ### Junior Frontend Developer
 
 ________________________________
-__email: kalaytanov@yandex.ru__
+### Contact information:
 
-__rs-scool: DKalaytanov__
+- email: kalaytanov@yandex.ru
+- rs-scool: DKalaytanov
 ________________________________
 
 ### About me
 
+I studied to be a lawyer, I didn't like it. I have been working with computers all 
+my life (repair, modernization, installation of programs). My dream has always been to 
+learn programming, but I thought it wasn't mine. Now I have set myself a goal to fix 
+this and learn web programming. I am gradually moving towards this goal.
 
-    I studied to be a lawyer, I didn't like it. I have been working with computers all 
-    my life (repair, modernization, installation of programs). My dream has always been to 
-    learn programming, but I thought it wasn't mine. Now I have set myself a goal to fix 
-    this and learn web programming. I am gradually moving towards this goal.
+### Programming skills
 
-___2. Programming skills___
+CSS and HTML. 
 
+### Сode examples
 
-    CSS and HTML. 
-
-___3. Сode examples___
-
-
-    *https://dkalaytanov.github.io/rsschool-cv/cv
-    *
+* https://dkalaytanov.github.io/rsschool-cv/cv
 
 
     
