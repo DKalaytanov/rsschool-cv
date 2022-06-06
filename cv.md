@@ -17,14 +17,42 @@ my life (repair, modernization, installation of programs). My dream has always b
 learn programming, but I thought it wasn't mine. Now I have set myself a goal to fix 
 this and learn web programming. I am gradually moving towards this goal.
 
+________________________________
+
 ### Programming skills
 
 CSS and HTML. 
 
-### Сode examples
+________________________________
 
+### Сode examples
 * https://dkalaytanov.github.io/rsschool-cv/cv
 
+________________________________
+
+### Work experience
+
+ - gardener
+ - typesetter seal maker
+ - consultant
+ - 1C specialist
+ - head of 1C direction
+
+________________________________
+
+### Education
+
+Higher legal education, self-development
+
+________________________________
+
+### English proficiency
+
+English language proficiency at the elementary level.
+
+________________________________
+
+:kissing_heart: kalaytanov & rs-scool
 
     
 
