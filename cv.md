@@ -6,7 +6,7 @@
 ________________________________
 ### Contact information:
 
-- email: kalaytanov@yandex.ru
+- email: kalaytanov@gmail.com
 - rs-scool: DKalaytanov
 
 ________________________________
