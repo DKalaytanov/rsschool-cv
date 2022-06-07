@@ -53,8 +53,6 @@ English language proficiency at the elementary level.
 
 ________________________________
 
-:kissing_heart: kalaytanov & rs-scool
-
     
 
 
