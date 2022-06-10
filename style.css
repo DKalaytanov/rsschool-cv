@@ -40,12 +40,9 @@
     margin-bottom: 70px;
     color: rgb(22, 23, 22);
   }
-  
+
   .footer {
-    font-size: 12px;
-    font-weight: bold;
     text-align: center;
-    margin: 10;
-    color: chartreuse;
-    background-color: dimgray;
-  }
+    margin-top: 2em;
+    font-size: 16px;
+    }
