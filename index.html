@@ -39,9 +39,24 @@
             border-radius: 50%;
         }
         .footer {
-            text-align: center;
+            text-align: right;
             margin-top: 2em;
-            font-size: 16px;
+            font-size: 18px;
+            position: relative;
+    
+        }
+
+        .footer_img {
+            width: 30%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-20%);
+            
+        }
+
+        .footer_url {
+            
         }
       </style>
 </head>
@@ -161,8 +176,15 @@
         <hr>
         </main>
         <footer class="footer">
+            <div class="footer_url">
                 <a href="https://github.com/DKalaytanov" target="_blank">My Github</a>
                 <p>Kalaytanov 2022</p>
+            </div>
+            <div class="footer_img">
+                <a href="https://rs.school/js/" class="rss" target="_blank">
+                    <img src="/rs_school_js.svg">
+                </a>
+            </div>
         </footer>
     </body>
 </html>
