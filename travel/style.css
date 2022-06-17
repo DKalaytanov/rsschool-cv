@@ -476,6 +476,84 @@ img {
     top: 0px;
 }
 
+.intra__title {
+    position: absolute;
+    width: 892px;
+    height: 422px;
+    left: 150px;
+    top: 122px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
 
+.intra__text {
+    position: absolute;
+    width: 723px;
+    height: 24px;
+    left: 150px;
+    top: 346px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.intra__input {
+    position: absolute;
+    width: 560px;
+    height: 22px;
+    left: 191px;
+    top: 448px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 0;
+    z-index: 1;
+}
+
+.intra__start--button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    position: absolute;
+    width: 228px;
+    height: 59px;
+    left: 766px;
+    top: 434px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    z-index: 1;
+}
+
+.intra__start--button:hover, .intra__start--button:focus, .intra__start--button:active {
+    background: #127f92;
+}
+
+.intra__search--background {
+    position: absolute;
+    width: 892px;
+    height: 95px;
+    left: 150px;
+    top: 416px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
 
 /* Intra end */
