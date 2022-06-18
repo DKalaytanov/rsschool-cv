@@ -11,8 +11,8 @@
     <!-- Header start -->
     <header class="header">
         <div class="wrapper">
-
             <div class="header__wrapper">
+            
                 <div class="header__logo">
                     <a href="#!" class="header__logo--link"><img src="/rsschool-cv/travel/img/svg/logo-ico.svg" alt="Dexplore the beauty of the World" class="header__logo--pic"></a>
                 </div>
@@ -33,9 +33,12 @@
                             <a href="#!" class="header__link">Travel Stories</a>
                         </li>
                     </ul>
-                    <button class="header__nav--button">Login</button>
+                    <!-- <button class="header__nav--button">Login</button> -->
                 </nav>
                  <!-- Navigation end -->
+                 <div class="header__button">
+                    <button class="header__nav--button">Login</button>
+                 </div>
             </div>
         </div>
     </header>
@@ -43,15 +46,60 @@
 
      <!-- Main start -->
      <main class="main">
-        <div class="intra">
+
+
+        <!-- Intra start -->
+        <section class="intra">
             <h1 class="intra__title">Explore the beauty of the World</h1>
             <p class="intra__text">
                 Receive personalized recommendations for countries, hotels, activities and more
             </p>
-            <input type="text" name="user_like_to_go" class="intra__input" placeholder="What would you like to do?">
+            <input type="search" class="intra__input" placeholder="What would you like to do?">
             <button class="intra__start--button">Start Planning</button>
             <div class="intra__search--background"></div>
-        </div>
+        </section>
+        <!-- Intra end -->
+
+
+        <!-- Trip start -->
+        <section class="trip">
+            <div class="trip__wrap">
+                <h2 class="trip__title">
+                    3 STEPS TO THE PERFECT TRIP
+                </h2>
+                <div class="trip__cards">
+
+                    <div class="trip__card">
+                        <div class="trip__card--pic">
+                            <img src="/rsschool-cv/travel/img/svg/trip-card1.svg" alt="Tell us what you want to do" class="trip__card--thumb">
+                        </div>
+                        <p class="trip__card--desc">
+                            Tell us what you want to do
+                        </p>
+                    </div>
+
+                    <div class="trip__card">
+                        <div class="trip__card--pic">
+                            <img src="/rsschool-cv/travel/img/svg/trip-card2.svg" alt="Share us preferable dates" class="trip__card--thumb">
+                        </div>
+                        <p class="trip__card--desc">
+                            Share us preferable dates
+                        </p>
+                    </div>
+
+                    <div class="trip__card">
+                        <div class="trip__card--pic">
+                            <img src="/rsschool-cv/travel/img/svg/trip-card3.svg" alt="We will give you recommendations" class="trip__card--thumb">
+                        </div>
+                        <p class="trip__card--desc">
+                            We will give you recommendations
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- Trip end -->
      </main>
      <!-- Main end -->
 </body>

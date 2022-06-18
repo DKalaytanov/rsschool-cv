@@ -365,6 +365,61 @@ textarea {
     padding: 0.2em 0;
 }
 
+/* red-hat-text-500 - latin */
+@font-face {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('/rsschool-cv/travel/fonts/red-hat-text-v11-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/rsschool-cv/travel/fonts/red-hat-text-v11-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* aleo-300 - latin */
+@font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* aleo-regular - latin */
+  @font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* aleo-italic - latin */
+  @font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    src: local(''),
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* aleo-700 - latin */
+  @font-face {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* aleo-700italic - latin */
+  @font-face {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    src: local(''),
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('/rsschool-cv/travel/fonts/aleo-v11-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 
 /* Делаем так что бы элементы были всегда указанного размера, все паддинги и маржины будут включены в эти размеры и не изменят указанный размер элемента */
@@ -372,11 +427,16 @@ html {
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: 'Aleo';
     font-style: normal;
+    font-weight: 300;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     color: #0D606F;
 }
 
@@ -385,17 +445,10 @@ img {
     height: auto;
 }
 
-.wrapper {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 25px 0;
-    }
-
-
-/* Header start */
+/* Header styles start */
 .header {
     position: absolute;
-    width: 1440px;
+    width: 100%;
     height: 90px;
     left: 0px;
     top: 0px;
@@ -403,18 +456,33 @@ img {
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 1440px;
+    margin-left: 120px;
+    padding: 25px 0;
+    }
+
 .header__wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.header__logo {
+    margin-bottom: 10px;
+}
+
+.header__nav {
+    margin-left: 158px;
 }
 
 .header__list {
     display: flex;
     flex-wrap: wrap;
-    /* align-content:flex-end; */
-    margin-left: 158px;
+    justify-content: flex-start;
 }
 
 .header__item {
@@ -422,10 +490,16 @@ img {
 }
 
 .header__item:last-child {
-    margin-right: 0;
+    margin-right: 0; /* обнуление отступа у последнего элемента меню */
+}
+
+.header__item:first-child {
+    margin-left: 0;
 }
 
 .header__link {
+    font-family: 'Red Hat Text';
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 21px;
@@ -437,6 +511,10 @@ img {
     opacity: .65; /* процентность смены цвета при наведении */
 }
 
+.header__button {
+    margin-left: 196px;
+}
+
 .header__nav--button {
     display: flex;
     flex-direction: row;
@@ -446,7 +524,6 @@ img {
     position: absolute;
     width: 103px;
     height: 41px;
-    left: 1217px;
     top: 25px;
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -463,24 +540,25 @@ img {
 .header__nav--button:hover, .header__nav--button:focus, .header__nav--button:active {
     background: #127f92;
 }
-/* Header end */
+/* Header styles end */
 
 
-/* Intra start */
+/* Intra styles start */
 .intra {
-    width: 1440px;
+    width: 100%;
     height: 765px;
-    background: url(/rsschool-cv/travel/img/bacground-image.jpg);
+    background: url(/rsschool-cv/travel/img/bacground-image.jpg) no-repeat center;
     background-size: cover;
     left: 0px;
     top: 0px;
+    /* margin-bottom: 80px; */
 }
 
 .intra__title {
     position: absolute;
-    width: 892px;
+    width: 62%;
     height: 422px;
-    left: 150px;
+    left: 120px;
     top: 122px;
     font-family: 'Aleo';
     font-style: normal;
@@ -492,13 +570,13 @@ img {
 
 .intra__text {
     position: absolute;
-    width: 723px;
+    width: 50.2%;
     height: 24px;
-    left: 150px;
+    left: 120px;
     top: 346px;
     font-family: 'Aleo';
     font-style: italic;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
@@ -506,20 +584,24 @@ img {
 
 .intra__input {
     position: absolute;
-    width: 560px;
+    width: 38.8%;
     height: 22px;
-    left: 191px;
-    top: 448px;
+    left: 161px;
+    top: 453px;
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 29px;
     color: #F2785C;
     border-radius: 10px;
     background-color: transparent;
     border: 0;
     z-index: 1;
+}
+
+.intra__input::placeholder {
+    color: #F2785C;
 }
 
 .intra__start--button {
@@ -530,10 +612,15 @@ img {
     padding: 10px 32px;
     gap: 10px;
     position: absolute;
-    width: 228px;
+    width: 15.8%;
     height: 59px;
     left: 766px;
     top: 434px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
@@ -548,12 +635,52 @@ img {
 
 .intra__search--background {
     position: absolute;
-    width: 892px;
+    width: 61.9%;
     height: 95px;
-    left: 150px;
+    left: 120px;
     top: 416px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
 }
+/* Intra styles end */
 
-/* Intra end */
+
+/* Trip style start */
+.trip__wrap {
+    max-width: 1177px;
+    margin: 0 auto;
+    margin-bottom: 97px;
+}
+
+.trip__title {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    padding: 80px 283px 40px;
+}
+
+
+.trip__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trip__card--pic {
+    max-width: 100px;
+    margin-bottom: 30px;
+}
+
+.trip__card--thumb {
+    display: flex;
+    align-content: center;
+}
+/* Trip style end */
