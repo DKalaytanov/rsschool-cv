@@ -446,6 +446,7 @@ img {
 }
 
 /* Header styles start */
+
 .header {
     position: absolute;
     width: 100%;
@@ -457,9 +458,9 @@ img {
 }
 
 .wrapper {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: center; */
     width: 1440px;
     margin-left: 120px;
     padding: 25px 0;
@@ -540,13 +541,16 @@ img {
 .header__nav--button:hover, .header__nav--button:focus, .header__nav--button:active {
     background: #127f92;
 }
+
 /* Header styles end */
 
 
 /* Intra styles start */
+
 .intra {
-    width: 100%;
-    height: 765px;
+    /* width: 100%;
+    height: 765px; */
+    min-height: 100vh;
     background: url(/rsschool-cv/travel/img/bacground-image.jpg) no-repeat center;
     background-size: cover;
     left: 0px;
@@ -605,10 +609,10 @@ img {
 }
 
 .intra__start--button {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     padding: 10px 32px;
     gap: 10px;
     position: absolute;
@@ -642,10 +646,12 @@ img {
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
 }
+
 /* Intra styles end */
 
 
 /* Trip style start */
+
 .trip__wrap {
     max-width: 1177px;
     margin: 0 auto;
@@ -679,8 +685,197 @@ img {
     margin-bottom: 30px;
 }
 
-.trip__card--thumb {
-    display: flex;
-    align-content: center;
-}
+
 /* Trip style end */
+
+
+/* Destinations style start */
+.destinations__wrap {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.destinations__title {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    text-align: center;
+    margin-bottom: 46px;
+}
+
+.destinations__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destinations__card--thumb{
+    width: 800px;
+    height: 800px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+.destinations__button--wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.destinations__circle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.destinations__circle--ico {
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.destinations__button {
+    align-items: center;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    color: white;
+}
+
+.destinations__button:hover, .destinations__button:focus, .destinations__button:active {
+    background: #127f92;
+}
+
+.destinations__arrow {
+    width: 35px;
+    height: 22.5px;
+    margin-right: 12.5px;
+}
+/* Destinations style end */
+
+/* Travel stories style start */
+.stories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.stories__wrap--title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 41px;
+}
+
+.stories__cards--wrap {
+    width: 100%;
+    height: 1331px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: url(/rsschool-cv/travel/img/background-card.jpg) no-repeat center;
+
+}
+
+.backgrond_white {
+    position: absolute;
+    left: 0px;
+    top: 1985px;
+    width: 100%;
+    height: 1331px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.stories__cards {
+    width: 1201px;
+    height: 1322px;
+    margin-top: 40px;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.stories__card {
+    height: 280px;
+    margin-bottom: 0;
+}
+
+.stories__title {
+    height: 53px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.stories__card-title {
+    position: relative;
+    top: -280px;
+    left: 440px;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.stories__card-pic {
+    width: 400px;
+    height: 250px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    margin-bottom: 30px;
+}
+
+.stories__card-thumb {
+    border-radius: 16px;
+}
+
+.stories__card-desk {
+    width: 760px;
+    height: 184px;
+    position: relative;
+    top: -260px;
+    left: 440px;
+}
+
+.stories__card--more {
+    position: relative;
+    top: -300px;
+    left: 440px;
+    color: #0D606F;
+}
+
+.backgrond_white {
+    position: absolute;
+    width: 1445px;
+    height: 1270px;
+    left: 0px;
+    top: 2397px;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.stories__button {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 32px;
+    gap: 10px;
+    width: 228px;
+    height: 59px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: 0;
+    color: white;
+    margin-left: 489px;
+}
+/* Travel stories style end */
