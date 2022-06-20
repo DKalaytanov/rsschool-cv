@@ -458,11 +458,10 @@ img {
 }
 
 .wrapper {
-    /* display: flex;
+    display: flex;
     flex-wrap: wrap;
-    align-content: center; */
-    width: 1440px;
-    margin-left: 120px;
+    align-content: center;
+    width: 100%;
     padding: 25px 0;
     }
 
@@ -470,6 +469,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: 120px;
 }
 
 .header__logo {
@@ -484,10 +484,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-}
-
-.header__item {
-    margin-left: 42px;
+    gap: 42px;
 }
 
 .header__item:last-child {
@@ -512,16 +509,7 @@ img {
     opacity: .65; /* процентность смены цвета при наведении */
 }
 
-.header__button {
-    margin-left: 196px;
-}
-
 .header__nav--button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     position: absolute;
     width: 103px;
     height: 41px;
@@ -536,36 +524,30 @@ img {
     border-radius: 10px;
     border: 0;
     color: white;
+    margin-left: 50.2%;
 }
 
 .header__nav--button:hover, .header__nav--button:focus, .header__nav--button:active {
     background: #127f92;
 }
-
 /* Header styles end */
 
+.main {
+    flex: 1;
+}
 
 /* Intra styles start */
-
 .intra {
-    /* width: 100%;
-    height: 765px; */
     min-height: 100vh;
     background: url(/rsschool-cv/travel/img/bacground-image.jpg) no-repeat center;
     background-size: cover;
-    left: 0px;
-    top: 0px;
-    /* margin-bottom: 80px; */
+    padding-top: 122px;
+    padding-bottom: 231px;
+    padding-left: 120px;
+    padding-right: 428px;
 }
 
 .intra__title {
-    position: absolute;
-    width: 62%;
-    height: 422px;
-    left: 120px;
-    top: 122px;
-    font-family: 'Aleo';
-    font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 96px;
@@ -573,53 +555,41 @@ img {
 }
 
 .intra__text {
-    position: absolute;
-    width: 50.2%;
-    height: 24px;
-    left: 120px;
-    top: 346px;
-    font-family: 'Aleo';
+    margin-top: 16px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
 }
 
-.intra__input {
-    position: absolute;
-    width: 38.8%;
+.search_form-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search_form-feeld {
+    width: 62.7%;
     height: 22px;
-    left: 161px;
-    top: 453px;
-    font-family: 'Aleo';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 29px;
-    color: #F2785C;
     border-radius: 10px;
     background-color: transparent;
     border: 0;
+    margin-top: 32px;
+    margin-left: 41px;
     z-index: 1;
 }
 
-.intra__input::placeholder {
+.search_form-feeld::placeholder {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
     color: #F2785C;
 }
 
-.intra__start--button {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; */
-    padding: 10px 32px;
-    gap: 10px;
-    position: absolute;
-    width: 15.8%;
+.search_form-submit {
+    width: 25.5%;
     height: 59px;
-    left: 766px;
-    top: 434px;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
@@ -630,23 +600,22 @@ img {
     border-radius: 10px;
     border: 0;
     color: white;
+    margin-top: 18px;
+    margin-left: 45px;
     z-index: 1;
 }
 
-.intra__start--button:hover, .intra__start--button:focus, .intra__start--button:active {
+.search_form-submit:hover, .search_form-submit:focus, .search_form-submit:active {
     background: #127f92;
 }
 
 .intra__search--background {
-    position: absolute;
-    width: 61.9%;
+    width: 100%;
     height: 95px;
-    left: 120px;
-    top: 416px;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
+    margin-top: 46px;
 }
-
 /* Intra styles end */
 
 
@@ -765,6 +734,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    height: 1405px;
     justify-content: center;
 }
 
@@ -782,24 +752,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     background: url(/rsschool-cv/travel/img/background-card.jpg) no-repeat center;
 
 }
 
-.backgrond_white {
-    position: absolute;
-    left: 0px;
-    top: 1985px;
-    width: 100%;
-    height: 1331px;
-    background: rgba(255, 255, 255, 0.7);
-}
-
 .stories__cards {
     width: 1201px;
-    height: 1322px;
+    height: 1229px;
     margin-top: 40px;
-    align-items: flex-start;
     z-index: 1;
 }
 
@@ -852,15 +813,17 @@ img {
     top: -300px;
     left: 440px;
     color: #0D606F;
+    font-weight: bold;
 }
 
 .backgrond_white {
-    position: absolute;
-    width: 1445px;
+    width: 100%;
     height: 1270px;
-    left: 0px;
-    top: 2397px;
-    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7) no-repeat center;
+    margin-top: 0;
 }
 
 .stories__button {
@@ -878,4 +841,43 @@ img {
     color: white;
     margin-left: 489px;
 }
+
+.stories__button:hover, .stories__button:focus, .stories__button:active {
+    background: #127f92;
+}
+
+.stories__arrow {
+    margin-left: 10px;
+}
 /* Travel stories style end */
+
+
+/* Footer style start */
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-height: 60px;
+}
+
+.footer__title {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 21px;
+    margin-left: 590px;
+}
+
+.footer__img {
+    margin-top: 15px;
+    margin-left: 310px;
+    margin-right: 100px;
+}
+
+.footer__img--ico {
+    margin-right: 24.21px;
+}
+/* Footer style end */
