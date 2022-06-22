@@ -677,13 +677,19 @@ img {
 
 .destinations__cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
+.destinations__card--pic {
+    margin-left: 60px;
+}
+
+.destinations__card--pic:first-child {
+    margin-left: 0;
+}
+
 .destinations__card--thumb{
-    width: 800px;
-    height: 800px;
     border-radius: 16px;
     margin-bottom: 24px;
 }
